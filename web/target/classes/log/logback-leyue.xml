@@ -4,9 +4,9 @@
 	<!-- 文件输出格式 -->
 	<property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n" />
 	<!-- test文件路径 -->
-	<property name="TEST_FILE_PATH" value="/Users/lixueqin/bootlogs" />
+	<property name="TEST_FILE_PATH" value="./bootlogs" />
 	<!-- pro文件路径 -->
-	<property name="PRO_FILE_PATH" value="/Users/lixueqin/bootlogs" />
+	<property name="PRO_FILE_PATH" value="./bootlogs" />
 
 	<!-- 开发环境 -->
 	<springProfile name="dev">
@@ -44,6 +44,9 @@
 		<root level="info">
 			<appender-ref ref="TEST-FILE" />
 		</root>
+
+
+
 	</springProfile>
 
 	<!-- 生产环境 -->

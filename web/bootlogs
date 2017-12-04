@@ -1,0 +1,659 @@
+2017-12-04 13:47:48.516 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8534 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:47:48.517 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:47:48.521 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69116131: startup date [Mon Dec 04 13:47:48 CST 2017]; root of context hierarchy
+2017-12-04 13:47:49.274 |-WARN  [restartedMain] org.mybatis.spring.mapper.ClassPathMapperScanner [167] -| No MyBatis mapper was found in '[com.leyue.boot.web.mapper]' package. Please check your configuration.
+2017-12-04 13:47:49.663 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8b55acc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:47:49.677 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4e9ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:47:49.874 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:47:49.876 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:47:49.877 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:47:49.885 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:47:49.886 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 1365 ms
+2017-12-04 13:47:49.961 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:47:49.961 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:47:49.962 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:47:49.962 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:47:49.962 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:47:49.963 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:47:49.963 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:47:50.094 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -| Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69116131: startup date [Mon Dec 04 13:47:48 CST 2017]; root of context hierarchy
+2017-12-04 13:47:50.113 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-04 13:47:50.114 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-04 13:47:50.142 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 13:47:50.142 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 13:47:50.188 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 13:47:50.291 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:47:50.292 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:47:50.348 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:47:50.356 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 13:47:52.047 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8751 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:47:52.051 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:47:52.773 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b6b21c6: startup date [Mon Dec 04 13:47:52 CST 2017]; root of context hierarchy
+2017-12-04 13:47:53.015 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 13:47:55.060 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4373b339] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:47:55.123 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d07f50b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:47:55.571 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:47:55.593 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:47:55.600 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:47:55.793 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:47:55.793 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 3022 ms
+2017-12-04 13:47:56.291 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:47:56.296 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:47:56.301 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:47:56.302 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:47:56.302 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:47:56.302 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:47:56.302 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:47:56.562 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:47:56.565 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:47:56.586 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 13:47:56.605 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:47:56.612 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 13:48:38.262 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8534 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:48:38.262 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:48:38.265 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c357b77: startup date [Mon Dec 04 13:48:38 CST 2017]; root of context hierarchy
+2017-12-04 13:48:39.192 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8b55acc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:48:39.199 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4e9ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:48:39.285 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:48:39.286 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:48:39.287 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:48:39.294 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:48:39.295 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 1030 ms
+2017-12-04 13:48:39.361 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:48:39.362 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:48:39.363 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:48:39.364 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:48:39.364 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:48:39.364 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:48:39.365 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:48:39.536 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:48:39.537 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:48:39.554 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:48:39.556 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 13:48:40.195 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8785 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:48:40.199 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:48:40.640 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7765b739: startup date [Mon Dec 04 13:48:40 CST 2017]; root of context hierarchy
+2017-12-04 13:48:40.913 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 13:48:43.257 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e4cd4313] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:48:43.328 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e6184e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:48:43.978 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:48:43.996 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:48:43.998 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:48:44.120 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:48:44.120 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 3480 ms
+2017-12-04 13:48:44.347 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:48:44.350 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:48:44.355 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:48:44.355 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:48:44.356 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:48:44.356 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:48:44.356 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:48:44.551 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:48:44.554 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:48:44.570 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 13:48:44.601 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:48:44.607 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 13:55:41.657 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8879 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:55:41.663 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:55:41.668 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1aee3b2b: startup date [Mon Dec 04 13:55:41 CST 2017]; root of context hierarchy
+2017-12-04 13:55:42.300 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e56eb316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:55:42.310 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f02f4e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:55:42.401 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:55:42.402 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:55:42.403 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:55:42.410 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:55:42.411 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 743 ms
+2017-12-04 13:55:42.479 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:55:42.480 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:55:42.480 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:55:42.481 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:55:42.481 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:55:42.481 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:55:42.482 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:55:42.542 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:55:42.543 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:55:42.558 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:55:42.563 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 13:56:49.660 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 8879 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 13:56:49.661 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 13:56:49.666 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e753157: startup date [Mon Dec 04 13:56:49 CST 2017]; root of context hierarchy
+2017-12-04 13:56:50.423 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e56eb316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:56:50.428 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f02f4e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 13:56:50.490 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 13:56:50.491 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 13:56:50.491 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 13:56:50.498 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 13:56:50.498 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 832 ms
+2017-12-04 13:56:50.555 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 13:56:50.556 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 13:56:50.557 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 13:56:50.557 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 13:56:50.557 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 13:56:50.558 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 13:56:50.558 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 13:56:50.623 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 13:56:50.625 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 13:56:50.644 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 13:56:50.647 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 14:06:02.742 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 9559 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 14:06:02.746 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 14:06:02.961 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4490add: startup date [Mon Dec 04 14:06:02 CST 2017]; root of context hierarchy
+2017-12-04 14:06:03.461 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 14:06:05.524 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$140dd33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:06:05.644 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ad51f05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:06:06.584 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 14:06:06.613 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 14:06:06.616 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 14:06:06.929 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 14:06:06.929 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 3968 ms
+2017-12-04 14:06:07.731 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 14:06:07.738 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 14:06:07.767 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 14:06:07.768 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 14:06:07.768 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 14:06:07.769 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 14:06:07.769 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 14:06:08.157 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 14:06:08.161 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 14:06:08.223 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 14:06:08.242 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 14:06:08.250 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 14:06:49.674 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 9623 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 14:06:49.679 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 14:06:49.845 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4490add: startup date [Mon Dec 04 14:06:49 CST 2017]; root of context hierarchy
+2017-12-04 14:06:50.411 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 14:06:51.869 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$49c9d4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:06:51.936 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e30df1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:06:52.435 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 14:06:52.457 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 14:06:52.458 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 14:06:52.576 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 14:06:52.576 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 2731 ms
+2017-12-04 14:06:52.789 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 14:06:52.790 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 14:06:52.794 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 14:06:52.795 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 14:06:52.795 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 14:06:52.796 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 14:06:52.796 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 14:06:52.995 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 14:06:53.002 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 14:06:53.013 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 14:06:53.032 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 14:06:53.038 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 14:07:43.548 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 9703 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 14:07:43.551 |-DEBUG [restartedMain] com.leyue.boot.web.Main [51] -| Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-12-04 14:07:43.553 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 14:07:43.656 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d2dd47e: startup date [Mon Dec 04 14:07:43 CST 2017]; root of context hierarchy
+2017-12-04 14:07:44.152 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 14:07:45.647 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$adeff3aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:07:45.856 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e784357c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:07:46.424 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 14:07:46.445 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 14:07:46.448 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 14:07:46.591 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 14:07:46.591 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 2935 ms
+2017-12-04 14:07:46.809 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 14:07:46.811 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 14:07:46.818 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 14:07:46.819 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 14:07:46.819 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 14:07:46.819 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 14:07:46.819 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 14:07:47.000 |-WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/lihao/project/springboot/web/target/classes/com/leyue/boot/web/mapper/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+2017-12-04 14:07:47.006 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 14:07:47.023 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 14:07:47.038 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 14:07:47.043 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "test" are currently active).
+
+2017-12-04 14:48:16.046 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 10528 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 14:48:16.047 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 14:48:16.052 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@701d0d8f: startup date [Mon Dec 04 14:48:16 CST 2017]; root of context hierarchy
+2017-12-04 14:48:17.668 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$be6a46fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:48:17.675 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7fe88cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:48:17.843 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 14:48:17.844 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 14:48:17.845 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 14:48:17.856 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 14:48:17.857 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 1806 ms
+2017-12-04 14:48:17.958 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 14:48:17.959 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 14:48:17.961 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 14:48:17.962 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 14:48:17.962 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 14:48:17.963 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 14:48:17.963 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 14:48:18.751 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -| Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@701d0d8f: startup date [Mon Dec 04 14:48:16 CST 2017]; root of context hierarchy
+2017-12-04 14:48:18.812 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/detail]}" onto public com.leyue.boot.web.pojo.User com.leyue.boot.web.controller.ApiController.detail(int)
+2017-12-04 14:48:18.813 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/ajax]}" onto public java.lang.String com.leyue.boot.web.controller.ApiController.ajax()
+2017-12-04 14:48:18.819 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/get]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.leyue.boot.web.controller.IndexController.get(java.lang.String,int)
+2017-12-04 14:48:18.820 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index]}" onto public java.lang.String com.leyue.boot.web.controller.IndexController.get()
+2017-12-04 14:48:18.820 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/find/{id}/{name}]}" onto public java.util.List<com.leyue.boot.web.pojo.User> com.leyue.boot.web.controller.IndexController.getUser(int,java.lang.String)
+2017-12-04 14:48:18.821 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/get]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.get(int)
+2017-12-04 14:48:18.822 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/detail]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.detail(int)
+2017-12-04 14:48:18.824 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.index(org.springframework.ui.Model)
+2017-12-04 14:48:18.824 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/error]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.error()
+2017-12-04 14:48:18.825 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/thymeleaf]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.thymeleaf(org.springframework.ui.Model)
+2017-12-04 14:48:18.827 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-04 14:48:18.828 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-04 14:48:18.847 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:18.848 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:18.903 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [273] -| Detected @ExceptionHandler methods in errorExceptionHandler
+2017-12-04 14:48:18.914 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:19.118 |-INFO  [restartedMain] org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [127] -| ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-12-04 14:48:19.190 |-INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [58] -| LiveReload server is running on port 35729
+2017-12-04 14:48:19.246 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 10628 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 14:48:19.249 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 14:48:19.345 |-INFO  [restartedMain] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] -| Registering beans for JMX exposure on startup
+2017-12-04 14:48:19.354 |-INFO  [restartedMain] org.springframework.context.support.DefaultLifecycleProcessor [343] -| Starting beans in phase 2147483647
+2017-12-04 14:48:19.364 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-04 14:48:19.365 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Starting ProtocolHandler [http-nio-8082]
+2017-12-04 14:48:19.369 |-INFO  [restartedMain] org.apache.tomcat.util.net.NioSelectorPool [179] -| Using a shared selector for servlet write/read
+2017-12-04 14:48:19.391 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [198] -| Tomcat started on port(s): 8082 (http)
+2017-12-04 14:48:19.395 |-INFO  [restartedMain] com.leyue.boot.web.Main [57] -| Started Main in 3.463 seconds (JVM running for 92.794)
+2017-12-04 14:48:19.415 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40780437: startup date [Mon Dec 04 14:48:19 CST 2017]; root of context hierarchy
+2017-12-04 14:48:20.101 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 14:48:22.186 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8d51befe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:48:22.261 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6e600d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 14:48:22.806 |-INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-04 14:48:22.806 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [489] -| FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-04 14:48:22.811 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [508] -| FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2017-12-04 14:48:22.813 |-ERROR [http-nio-8082-exec-1] com.leyue.boot.web.controller.ApiController [42] -| --------ajax------------
+2017-12-04 14:48:23.272 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 14:48:23.298 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 14:48:23.304 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 14:48:23.605 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 14:48:23.605 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 4190 ms
+2017-12-04 14:48:24.303 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 14:48:24.306 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 14:48:24.312 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 14:48:24.313 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 14:48:24.313 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 14:48:24.316 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 14:48:24.316 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 14:48:25.615 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -| Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40780437: startup date [Mon Dec 04 14:48:19 CST 2017]; root of context hierarchy
+2017-12-04 14:48:25.714 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/detail]}" onto public com.leyue.boot.web.pojo.User com.leyue.boot.web.controller.ApiController.detail(int)
+2017-12-04 14:48:25.716 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/ajax]}" onto public java.lang.String com.leyue.boot.web.controller.ApiController.ajax()
+2017-12-04 14:48:25.718 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/get]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.leyue.boot.web.controller.IndexController.get(java.lang.String,int)
+2017-12-04 14:48:25.719 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index]}" onto public java.lang.String com.leyue.boot.web.controller.IndexController.get()
+2017-12-04 14:48:25.720 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/find/{id}/{name}]}" onto public java.util.List<com.leyue.boot.web.pojo.User> com.leyue.boot.web.controller.IndexController.getUser(int,java.lang.String)
+2017-12-04 14:48:25.721 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/get]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.get(int)
+2017-12-04 14:48:25.722 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/detail]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.detail(int)
+2017-12-04 14:48:25.723 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.index(org.springframework.ui.Model)
+2017-12-04 14:48:25.726 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/error]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.error()
+2017-12-04 14:48:25.726 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/thymeleaf]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.thymeleaf(org.springframework.ui.Model)
+2017-12-04 14:48:25.729 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-04 14:48:25.730 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-04 14:48:25.768 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:25.769 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:25.794 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [273] -| Detected @ExceptionHandler methods in errorExceptionHandler
+2017-12-04 14:48:25.828 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 14:48:26.482 |-INFO  [restartedMain] org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [127] -| ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-12-04 14:48:26.693 |-WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [62] -| Unable to start LiveReload server
+2017-12-04 14:48:26.822 |-INFO  [restartedMain] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] -| Registering beans for JMX exposure on startup
+2017-12-04 14:48:26.834 |-INFO  [restartedMain] org.springframework.context.support.DefaultLifecycleProcessor [343] -| Starting beans in phase 2147483647
+2017-12-04 14:48:26.851 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-04 14:48:26.872 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Starting ProtocolHandler [http-nio-8082]
+2017-12-04 14:48:26.888 |-ERROR [restartedMain] org.apache.coyote.http11.Http11NioProtocol [181] -| Failed to start end point associated with ProtocolHandler [http-nio-8082]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.leyue.boot.web.Main.main(Main.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2017-12-04 14:48:26.892 |-ERROR [restartedMain] org.apache.catalina.core.StandardService [181] -| Failed to start connector [Connector[HTTP/1.1-8082]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8082]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.leyue.boot.web.Main.main(Main.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 19 common frames omitted
+2017-12-04 14:48:26.905 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Pausing ProtocolHandler ["http-nio-8082"]
+2017-12-04 14:48:26.905 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Stopping service Tomcat
+2017-12-04 14:48:26.913 |-WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2017-12-04 14:48:26.921 |-INFO  [restartedMain] org.apache.catalina.util.LifecycleBase [179] -| The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-12-04 14:48:26.921 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Stopping ProtocolHandler ["http-nio-8082"]
+2017-12-04 14:48:26.922 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Destroying ProtocolHandler ["http-nio-8082"]
+2017-12-04 14:48:26.935 |-INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-12-04 14:48:26.945 |-ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8082 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8082, or configure this application to listen on another port.
+
+2017-12-04 14:48:26.952 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] -| Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40780437: startup date [Mon Dec 04 14:48:19 CST 2017]; root of context hierarchy
+2017-12-04 14:48:26.954 |-INFO  [restartedMain] org.springframework.context.support.DefaultLifecycleProcessor [358] -| Stopping beans in phase 2147483647
+2017-12-04 14:48:26.955 |-INFO  [restartedMain] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] -| Unregistering JMX-exposed beans on shutdown
+2017-12-04 14:48:33.504 |-ERROR [http-nio-8082-exec-7] com.leyue.boot.web.controller.ApiController [42] -| --------ajax------------
+2017-12-04 14:48:36.073 |-ERROR [http-nio-8082-exec-2] com.leyue.boot.web.controller.ApiController [42] -| --------ajax------------
+2017-12-04 14:48:57.861 |-ERROR [http-nio-8082-exec-5] com.leyue.boot.web.controller.ApiController [33] -| --------detail------------10
+2017-12-04 14:49:42.047 |-ERROR [http-nio-8082-exec-1] com.leyue.boot.web.controller.ApiController [33] -| --------detail------------10
+2017-12-04 14:50:20.330 |-ERROR [http-nio-8082-exec-8] com.leyue.boot.web.controller.ApiController [33] -| --------detail------------2
+2017-12-04 14:50:25.343 |-ERROR [http-nio-8082-exec-9] com.leyue.boot.web.controller.ApiController [33] -| --------detail------------2
+2017-12-04 14:50:29.666 |-INFO  [Thread-16] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] -| Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@701d0d8f: startup date [Mon Dec 04 14:48:16 CST 2017]; root of context hierarchy
+2017-12-04 14:50:29.668 |-INFO  [Thread-16] org.springframework.context.support.DefaultLifecycleProcessor [358] -| Stopping beans in phase 2147483647
+2017-12-04 14:50:29.669 |-INFO  [Thread-16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] -| Unregistering JMX-exposed beans on shutdown
+2017-12-04 15:24:38.295 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 11029 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 15:24:38.302 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 15:24:38.662 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e2379b: startup date [Mon Dec 04 15:24:38 CST 2017]; root of context hierarchy
+2017-12-04 15:24:39.322 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 15:24:41.248 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$2845c010] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 15:24:41.318 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61da01e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 15:24:41.967 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 15:24:41.989 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 15:24:41.991 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 15:24:42.136 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 15:24:42.136 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 3474 ms
+2017-12-04 15:24:42.524 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 15:24:42.528 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 15:24:42.537 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 15:24:42.538 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 15:24:42.538 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 15:24:42.539 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 15:24:42.540 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 15:24:43.771 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -| Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e2379b: startup date [Mon Dec 04 15:24:38 CST 2017]; root of context hierarchy
+2017-12-04 15:24:43.895 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/detail]}" onto public com.leyue.boot.web.pojo.User com.leyue.boot.web.controller.ApiController.detail(int)
+2017-12-04 15:24:43.897 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/ajax]}" onto public java.lang.String com.leyue.boot.web.controller.ApiController.ajax()
+2017-12-04 15:24:43.899 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/file/show]}" onto public java.lang.String com.leyue.boot.web.controller.FileController.show()
+2017-12-04 15:24:43.899 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/file/upload]}" onto public java.lang.String com.leyue.boot.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile)
+2017-12-04 15:24:43.900 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/get]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.leyue.boot.web.controller.IndexController.get(java.lang.String,int)
+2017-12-04 15:24:43.901 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index]}" onto public java.lang.String com.leyue.boot.web.controller.IndexController.get()
+2017-12-04 15:24:43.901 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/find/{id}/{name}]}" onto public java.util.List<com.leyue.boot.web.pojo.User> com.leyue.boot.web.controller.IndexController.getUser(int,java.lang.String)
+2017-12-04 15:24:43.904 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/get]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.get(int)
+2017-12-04 15:24:43.905 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/detail]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.detail(int)
+2017-12-04 15:24:43.906 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.index(org.springframework.ui.Model)
+2017-12-04 15:24:43.907 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/error]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.error()
+2017-12-04 15:24:43.907 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/thymeleaf]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.thymeleaf(org.springframework.ui.Model)
+2017-12-04 15:24:43.910 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-04 15:24:43.911 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-04 15:24:43.950 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:24:43.951 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:24:43.972 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [273] -| Detected @ExceptionHandler methods in errorExceptionHandler
+2017-12-04 15:24:44.009 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:24:44.629 |-INFO  [restartedMain] org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [127] -| ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-12-04 15:24:44.783 |-INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [58] -| LiveReload server is running on port 35729
+2017-12-04 15:24:44.860 |-INFO  [restartedMain] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] -| Registering beans for JMX exposure on startup
+2017-12-04 15:24:44.870 |-INFO  [restartedMain] org.springframework.context.support.DefaultLifecycleProcessor [343] -| Starting beans in phase 2147483647
+2017-12-04 15:24:44.887 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-04 15:24:44.907 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Starting ProtocolHandler [http-nio-8082]
+2017-12-04 15:24:44.931 |-INFO  [restartedMain] org.apache.tomcat.util.net.NioSelectorPool [179] -| Using a shared selector for servlet write/read
+2017-12-04 15:24:44.958 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [198] -| Tomcat started on port(s): 8082 (http)
+2017-12-04 15:24:44.967 |-INFO  [restartedMain] com.leyue.boot.web.Main [57] -| Started Main in 7.732 seconds (JVM running for 9.932)
+2017-12-04 15:24:45.208 |-INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-04 15:24:45.209 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [489] -| FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-04 15:24:45.239 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [508] -| FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-12-04 15:25:01.425 |-INFO  [http-nio-8082-exec-3] com.leyue.boot.web.controller.FileController [36] -| 上传文件名：QRCode.png
+2017-12-04 15:25:01.426 |-INFO  [http-nio-8082-exec-3] com.leyue.boot.web.controller.FileController [41] -| 上传的后缀名为： .png
+2017-12-04 15:25:01.430 |-INFO  [http-nio-8082-exec-3] com.leyue.boot.web.controller.FileController [61] -| 上传文件路径：/Users/lihao/project/springboot/web/./static/images/uploadQRCode.png
+2017-12-04 15:26:11.378 |-INFO  [Thread-9] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] -| Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e2379b: startup date [Mon Dec 04 15:24:38 CST 2017]; root of context hierarchy
+2017-12-04 15:26:11.381 |-INFO  [Thread-9] org.springframework.context.support.DefaultLifecycleProcessor [358] -| Stopping beans in phase 2147483647
+2017-12-04 15:26:11.383 |-INFO  [Thread-9] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] -| Unregistering JMX-exposed beans on shutdown
+2017-12-04 15:26:23.721 |-INFO  [restartedMain] com.leyue.boot.web.Main [48] -| Starting Main on lihaodeMacBook-Pro.local with PID 11085 (/Users/lihao/project/springboot/web/target/classes started by lihao in /Users/lihao/project/springboot/web)
+2017-12-04 15:26:23.722 |-INFO  [restartedMain] com.leyue.boot.web.Main [641] -| The following profiles are active: test
+2017-12-04 15:26:23.829 |-INFO  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4490add: startup date [Mon Dec 04 15:26:23 CST 2017]; root of context hierarchy
+2017-12-04 15:26:24.240 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.4.Final
+2017-12-04 15:26:25.866 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$fd787aff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 15:26:25.949 |-INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] -| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$370cbcd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-04 15:26:27.391 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] -| Tomcat initialized with port(s): 8082 (http)
+2017-12-04 15:26:27.463 |-INFO  [restartedMain] org.apache.catalina.core.StandardService [179] -| Starting service Tomcat
+2017-12-04 15:26:27.472 |-INFO  [restartedMain] org.apache.catalina.core.StandardEngine [179] -| Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-12-04 15:26:27.713 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring embedded WebApplicationContext
+2017-12-04 15:26:27.713 |-INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader [276] -| Root WebApplicationContext: initialization completed in 3884 ms
+2017-12-04 15:26:28.125 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-04 15:26:28.128 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [190] -| Mapping servlet: 'customServlet' to [/leyue3]
+2017-12-04 15:26:28.134 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-04 15:26:28.135 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-04 15:26:28.136 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-04 15:26:28.136 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [258] -| Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-04 15:26:28.136 |-INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [271] -| Mapping filter: 'customFilter' to urls: [/leyue3]
+2017-12-04 15:26:29.166 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -| Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4490add: startup date [Mon Dec 04 15:26:23 CST 2017]; root of context hierarchy
+2017-12-04 15:26:29.260 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/detail]}" onto public com.leyue.boot.web.pojo.User com.leyue.boot.web.controller.ApiController.detail(int)
+2017-12-04 15:26:29.262 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/api/ajax]}" onto public java.lang.String com.leyue.boot.web.controller.ApiController.ajax()
+2017-12-04 15:26:29.263 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/file/show]}" onto public java.lang.String com.leyue.boot.web.controller.FileController.show()
+2017-12-04 15:26:29.263 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/file/upload]}" onto public java.lang.String com.leyue.boot.web.controller.FileController.upload(org.springframework.web.multipart.MultipartFile)
+2017-12-04 15:26:29.266 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/get]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.leyue.boot.web.controller.IndexController.get(java.lang.String,int)
+2017-12-04 15:26:29.266 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index]}" onto public java.lang.String com.leyue.boot.web.controller.IndexController.get()
+2017-12-04 15:26:29.267 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/index/find/{id}/{name}]}" onto public java.util.List<com.leyue.boot.web.pojo.User> com.leyue.boot.web.controller.IndexController.getUser(int,java.lang.String)
+2017-12-04 15:26:29.269 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/get]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.get(int)
+2017-12-04 15:26:29.270 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/user/detail]}" onto public java.lang.String com.leyue.boot.web.controller.UserContrller.detail(int)
+2017-12-04 15:26:29.272 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.index(org.springframework.ui.Model)
+2017-12-04 15:26:29.272 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/error]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.error()
+2017-12-04 15:26:29.273 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/web/thymeleaf]}" onto public java.lang.String com.leyue.boot.web.controller.WebController.thymeleaf(org.springframework.ui.Model)
+2017-12-04 15:26:29.275 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-04 15:26:29.276 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] -| Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-04 15:26:29.315 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:26:29.316 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:26:29.342 |-INFO  [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [273] -| Detected @ExceptionHandler methods in errorExceptionHandler
+2017-12-04 15:26:29.374 |-INFO  [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] -| Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-04 15:26:29.966 |-INFO  [restartedMain] org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [127] -| ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-12-04 15:26:30.105 |-INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [58] -| LiveReload server is running on port 35729
+2017-12-04 15:26:30.182 |-INFO  [restartedMain] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] -| Registering beans for JMX exposure on startup
+2017-12-04 15:26:30.192 |-INFO  [restartedMain] org.springframework.context.support.DefaultLifecycleProcessor [343] -| Starting beans in phase 2147483647
+2017-12-04 15:26:30.208 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-04 15:26:30.225 |-INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol [179] -| Starting ProtocolHandler [http-nio-8082]
+2017-12-04 15:26:30.242 |-INFO  [restartedMain] org.apache.tomcat.util.net.NioSelectorPool [179] -| Using a shared selector for servlet write/read
+2017-12-04 15:26:30.263 |-INFO  [restartedMain] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [198] -| Tomcat started on port(s): 8082 (http)
+2017-12-04 15:26:30.269 |-INFO  [restartedMain] com.leyue.boot.web.Main [57] -| Started Main in 7.065 seconds (JVM running for 7.609)
+2017-12-04 15:26:42.824 |-INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-04 15:26:42.826 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [489] -| FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-04 15:26:42.849 |-INFO  [http-nio-8082-exec-1] org.springframework.web.servlet.DispatcherServlet [508] -| FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-12-04 15:26:42.931 |-INFO  [http-nio-8082-exec-1] com.leyue.boot.web.controller.FileController [36] -| 上传文件名：qrcode_for_gh_bf50d888877d_430.jpg
+2017-12-04 15:26:42.932 |-INFO  [http-nio-8082-exec-1] com.leyue.boot.web.controller.FileController [41] -| 上传的后缀名为： .jpg
+2017-12-04 15:26:42.933 |-INFO  [http-nio-8082-exec-1] com.leyue.boot.web.controller.FileController [61] -| 上传文件路径：/Users/lihao/project/springboot/web/src/main/resources/static/images/uploadqrcode_for_gh_bf50d888877d_430.jpg
+2017-12-04 15:27:01.189 |-INFO  [Thread-9] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] -| Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4490add: startup date [Mon Dec 04 15:26:23 CST 2017]; root of context hierarchy
+2017-12-04 15:27:01.193 |-INFO  [Thread-9] org.springframework.context.support.DefaultLifecycleProcessor [358] -| Stopping beans in phase 2147483647
+2017-12-04 15:27:01.198 |-INFO  [Thread-9] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] -| Unregistering JMX-exposed beans on shutdown
